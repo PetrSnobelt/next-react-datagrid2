@@ -17,3 +17,7 @@ Uncaught TypeError: Cannot read property 'props' of undefined
 
 but same code works in codesandbox like a charm
 https://codesandbox.io/s/n069yloop
+
+## Some more info
+If code is run using `npm run dev` - error occured, 
+but if it is run using `npm run build && npm run start` it works correctly
