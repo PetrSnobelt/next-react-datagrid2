@@ -20,16 +20,10 @@ const createRows = () => {
   return rows
 }
 
-class Grid extends Component {
-  state = {
-    show: false
-  }
-
+export default class Grid extends Component {
   render () {
     const gridData = createRows()
     const gridColumns = defaultColumns
-    if (!this.state.show) return <button onClick={()=> this.setState({show:true})}>show grid</button>
-
     return (<div>
       <h1>nextjs+react-datagrid2 - problem with mousewheel</h1>
       <DataGrid idProperty='id'
@@ -41,5 +35,3 @@ class Grid extends Component {
     </div>)
   }
 }
-
-export default () => <Grid />
